@@ -1,0 +1,14 @@
+.barChart02 {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #adadad;
+}
+
+.barChart02_chartStyle {
+    width: 300px;
+    height: 150px;
+}

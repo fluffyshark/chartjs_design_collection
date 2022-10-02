@@ -1,0 +1,15 @@
+.lineChart03 {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #adadad;
+    background-color: #f1f5f8;
+}
+
+.lineChart03_chartStyle {
+    width: 300px;
+    height: 150px;
+}
