@@ -1,0 +1,33 @@
+.chartTotal {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+.chartTotal_chartStyle {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chartTotal_textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    position: absolute;
+    top: calc(50% - 45px);
+    left: calc(50% - 50px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+

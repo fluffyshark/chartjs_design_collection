@@ -65,6 +65,13 @@ body {
   gap: 20px;
 }
 
+.section07_designs01 {
+  width: 80%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+}
+
 
 
 .App_bottom {
