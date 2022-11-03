@@ -11,6 +11,8 @@ import PieChart01 from './charts/pieChart01/PieChart01';
 import PolarChart01 from './charts/polarChart01/PolarChart01';
 import RadarChart01 from './charts/radarChart01/RadarChart01';
 import {UserData} from "./Data"
+import BarChart03 from './designs/barChart3/BarChar3';
+import StudentRadarChart from './designs/studentRadar/StudentRadarChart';
 import ThreeDoughnuts from './designs/threeDoughnuts/ThreeDoughnuts';
 
 function App() {
@@ -43,6 +45,7 @@ function App() {
         <div className="section01_barCharts">
           <BarChart01/>
           <BarChart02/>
+          <BarChart03/>
         </div>
         
         <div className="section02_lineCharts">
@@ -61,6 +64,7 @@ function App() {
         
         <div className="section05_radarCharts">
           <RadarChart01/>
+          <StudentRadarChart/>
         </div>
         
         <div className="section06_doughnutCharts">
