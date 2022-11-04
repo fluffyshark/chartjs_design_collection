@@ -13,16 +13,11 @@
     width: 50%;
     height: 100%;
 }
-.barChart3_top_right {
-    width: 50%;
-    height: 100%;
-    background-color: green;
-}
 .barChart3_top_title {
     color: black;
     font-size: 20px;
     font-weight: bold;
-    margin: 10px 0px 0px 20px;
+    margin: 15px 0px 0px 20px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .barChart3_top_subtitle {
@@ -31,6 +26,35 @@
     margin: 0px 20px 0px 20px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.barChart3_top_right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.barChart3_top_right_dropdown {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.barChart3_top_right_dropdown>p {
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #29292c;
+}
+.barChart3_top_right_dropdown>img {
+    height: 18px;
+    margin-top: 2px;
+}
+
+
+
 
 
 .barChart3_bottom {

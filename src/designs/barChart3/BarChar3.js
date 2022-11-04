@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import {UserData} from "../../Data"
+import React from 'react'
 import "./barChart3.css"
 import { Bar } from "react-chartjs-2"
 import {Chart as ChartJS} from "chart.js/auto"
+import circleDropdown from "./circle_dropdown.png"
 
 
 // Imported standard and plain bar chart from BarChart.js
@@ -13,26 +13,30 @@ function BarChart03() {
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
         datasets: [{
           label: 'My First Dataset',
-          data: [1800, 1600, 1000, 1700, 1000, 500, 1900],
+          data: [1800, 1600, 1000, 1700, 1000, 500, 1900, 500, 1500, 1400, 1000],
           backgroundColor: "#28cc75",
           borderColor: "#ffffff",
-          borderWidth: 4,
-          barThickness: 17,
+          borderWidth: 0,
+        //  barThickness: 8,
+          
           
         },
         {
             label: 'My First Dataset',
-            data: [1500, 1400, 500, 1200, 1900, 600, 1400],
+            data: [1500, 1400, 500, 1200, 1900, 600, 1400, 1100, 800, 1200, 2000],
             backgroundColor: "#695efa",
             borderColor: "#ffffff",
-            borderWidth: 4,
-            barThickness: 17,
+            borderWidth: 0,
+        //  barThickness: 8,
           }
     ] ,
          
       }
 
       var options = {  
+        //  Control bar thickness and space between bars 
+        barPercentage: 0.8,
+        categoryPercentage: 0.5,
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
@@ -46,13 +50,14 @@ function BarChart03() {
         
         scales: {
           
+          
             // to remove the labels
             x: {
               ticks: {
                 display: true,
                 font: {size: 11},
                 color: "grey",
-              
+                
                 
               },
         
@@ -92,7 +97,7 @@ function BarChart03() {
     };
 
       const tickNames = ["$0", "$400", "$800", "$1200", "$1600", "$2000"]
-      const style = {width:"100%"}
+      const style = {width:"525px"}
 
 
   return (
@@ -102,7 +107,12 @@ function BarChart03() {
             <p className='barChart3_top_title'>Project Statistics</p>
             <p className='barChart3_top_subtitle'>Overall Information</p>
           </div>
-          <div className="barChart3_top_right"></div>
+          <div className="barChart3_top_right">
+            <div className='barChart3_top_right_dropdown'>
+              <p>Last year</p>
+              <img src={circleDropdown} alt="" />
+            </div>
+          </div>
         </div>
         <div className="barChart3_bottom">
             <div className='barChart03_chartStyle'>

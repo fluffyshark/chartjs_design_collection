@@ -12,7 +12,7 @@ function DoughnutChart02() {
         ],
         datasets: [{
           label: 'My First Dataset',
-          data: [60, 40],
+          data: [70, 30],
           backgroundColor: [
             'rgb(255, 99, 132)',
             "#f1f5f8",
