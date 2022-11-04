@@ -13,7 +13,8 @@ function LineChart03() {
             label: "First dataset",
             data: [33, 53, 85, 41, 44, 65, 56, 34, 75, 30],
             fill: true,
-            backgroundColor: (context: ScriptableContext<"line">) => {
+        //    backgroundColor: (context: ScriptableContext<"line">) => { // Was this before
+            backgroundColor: (context) => {
                 const ctx = context.chart.ctx;
                 const gradient = ctx.createLinearGradient(0, 0, 0, 120);
                 gradient.addColorStop(0, "rgba(35,101,249,0.6)");
