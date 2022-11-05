@@ -4,6 +4,8 @@ import "./doughnutChart02.css"
 
 function DoughnutChart02() {
 
+
+  
     const data = {
         labels: [
          
